@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px; 
+}
+@media screen and (max-width: 670px){
+    header{
+        min-height: 380px;
+    }
+}
+.no-shadows{
+    box-shadow: none;
+}
