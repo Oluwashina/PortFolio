@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <!-- Import Google font and icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css" rel="stylesheet">
@@ -17,19 +18,17 @@
                 <a href="#" class="brand-logo">
          <img src="images/icon_green-1.png" class="" alt="logo" width="20" height="30" style="margin-top: 15px;" >
                 </a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <a href="#" class="sidenav-trigger right" data-target="mobile-links">
                         <i class="material-icons">menu</i>
                     </a>
                 <ul class="right hide-on-med-and-down">
                         <li><a href="#" class="">About Me</a>
-                        <li><a href="#" class="">Services</a></li>
                         <li><a href="#" class="">Portfolio</a></li>
                         <li><a href="#" class="">Reviews</a></li>
                         <li><a href="#" class="">Contact</a></li>
                 </ul>
                 <ul class="sidenav" id="mobile-links">
                     <li><a href="#" class="waves-effect" target="_self">About Me</a></li>
-                    <li><a href="#" class="waves-effect" target="_self">Services</a></li>
                     <li><a href="#" class="waves-effect" target="_self">Portfolio</a></li>
                     <li><a href="#" class="waves-effect" target="_self">Reviews</a></li>
                     <li><a href="#" class="waves-effect" target="_self">Contact</a></li>
@@ -37,32 +36,80 @@
             </div>
         </nav>
         <div class="container" style="margin-top: 50px;">
+            <h5 class="white-text">Kure-Ojo Oluwashina</h5>
+            <p class="white-text">Hi, I'm a Front-end Web Developer passionate about coding and acquiring new knowledge.</p>
+            <a href="https://api.whatsapp.com/send?phone=+2347060825698"><i class="fab fa-whatsapp white-text" style="margin-top: 10px; margin-right: 10px; font-size: 18px;"></i></a>
+            <a href="https://github.com/Oluwashina?tab=repositories" target="_blank"><i class="fab fa-github white-text" style="margin-right: 10px; font-size: 18px;"></i></a>
+            <a href="#"><i class="fab fa-bitbucket white-text" style="font-size: 18px; margin-right: 10px;"></i></a> 
+            <a href="mailto:shinzbaba@gmail.com"><i class="fa fa-envelope white-text" style="font-size: 18px;"></i></a> 
+            <p><a href="#" class="btn waves-effect green" style="margin-top: 10px; text-transform: initial;">Check my work!</a></p>                  
+        </div>
+    </header>
+    <!-- first section -->
+    <section>
+        <div class="container">
+            <h4 class="center-align">About me</h4>
             <div class="row">
                 <div class="col s12 l6">
-                    <h5 class="white-text">Kure-Ojo Oluwashina</h5>
-                    <p class="white-text">I'm a Frontend Web Developer.</p>
-                    <a href="https://api.whatsapp.com/send?phone=+2347060825698"><i class="fab fa-whatsapp white-text" style="margin-top: 10px; margin-right: 10px; font-size: 18px;"></i></a>
-                    <a href="https://github.com/Oluwashina?tab=repositories" target="_blank"><i class="fab fa-github white-text" style="margin-right: 10px; font-size: 18px;"></i></a>
-                    <a href="#"><i class="fab fa-bitbucket white-text" style="font-size: 18px; margin-right: 10px;"></i></a> 
-                    <a href="mailto:shinzbaba@gmail.com"><i class="fa fa-envelope white-text" style="font-size: 18px;"></i></a> 
-                    <p><a href="#" class="btn waves-effect green" style="margin-top: 10px;">Learn More</a></p>        
+                    <p class="about">I am a keen follower of life-long learning so i always practice, improve my skills and acquire new knowledge.</p>
+                    <p>I started web development with a desire to execute my creativity and create new things.</p>
+                </div>
+                <div class="col s12 l6">
+                 <!-- <p>Acquired Skills</p> -->
+                    <div style="margin-top: 10px;">
+                        <ul style="display: flex; justify-content: space-evenly;">
+                            <li><img src="images/html5.png" alt="html5" width="60" height="60"></li>
+                            <li><img src="images/css33.png" alt="css3" width="60" height="60"></li>
+                            <li><img src="images/js.png" alt="css3" width="90" height="60"></li>
+                            <li><img src="images/jquery.png" alt="jquery" width="90" height="80"></li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <ul style="display: flex; justify-content: space-evenly;">
+                            <li><img src="images/bootstrap.png" alt="bootstrap" width="70" height="70"></li>
+                            <li><img src="images/materialize.png" alt="materialize" width="60" height="60"></li>
+                            <li><img src="images/github.png" alt="jquery" width="60" height="60"></li>
+                            <li><img src="images/vue.png" alt="css3" width="60" height="60"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <!-- second section -->
     <section>
-        <div class="container center-align">
-            <h5>About Me</h5>
-        </div>
         <div class="container">
+            <h4 class="center-align">Some of my works</h4>
             <div class="row">
                 <div class="col s12 l6">
-                    
+                    <div class="card">
+                        <div class="card-image">
+                          <img alt="firstsite" src="images/designr.PNG">
+                        </div>
+                        <div class="card-content">
+                          <h5>Designr</h5>
+                          <p>Html,Css,MaterializeCss,Jquery</p>
+                        </div>
+                        <div class="card-action">
+                          <a class="green-text" href="https://designr.ng" target="_blank">Visit</a>
+                        </div>
+                      </div>
                 </div>
+                <!-- second column -->
                 <div class="col s12 l6">
-                    <h5>Skills</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odit quibusdam quis cum iste consequatur expedita numquam ad adipisci aliquam ipsam necessitatibus velit, possimus beatae, eaque inventore, asperiores ipsum corrupti?</p>
-                </div>
+                    <div class="card">
+                        <div class="card-image">
+                          <img alt="secondsite" src="images/designr2.PNG">
+                        </div>
+                        <div class="card-content">
+                          <h5>Designr</h5>
+                          <p>Html,Css,MaterializeCss,Jquery</p>
+                        </div>
+                        <div class="card-action">
+                          <a class="green-text" href="https://wonderful-fermi-f9b0e1.netlify.com/" target="_blank">Visit</a>
+                        </div>
+                      </div>
+                </div>            
             </div>
         </div>
     </section>
@@ -81,7 +128,9 @@
 <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
 <script>
     $(document).ready(function(){
-        $('.sidenav').sidenav();
+        $('.sidenav').sidenav({
+            edge: 'right'
+        });
 
     })
 </script>
