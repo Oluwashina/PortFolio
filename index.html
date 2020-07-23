@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- favicon -->
+    <link rel='icon' href='images/OJO.png' type='image/x-icon' sizes="16x16" />
     <!-- Import Google font and icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
@@ -225,7 +227,7 @@
                                 <div class="container">
           <blockquote><p style="text-align: center;">He is a great developer, He is recommendable.</p></blockquote>
                                     <div class="col s4 l4" style="margin-top: 10px;">
-                                        <img src="images/casual.png" alt="first testimonials" class="responsive-img testimonials">
+                                        <img src="images/user_avatar.jpg" alt="first testimonials" class="responsive-img testimonials">
                                     </div>
                                     <div class="col s8 l8" style="margin-top: 10px;">
                                     <h6 class="center-align" style="color: #033953;">Akinyemi Ogungbaro</h6>
@@ -255,7 +257,7 @@
                                     <div class="container">
                   <blockquote><p style="text-align: center;">We could not get our designs to beat our competitors until we found him.</p></blockquote>
                                     <div class="col s4 l4" style="margin-top: 10px;">
-                                        <img src="images/Photo1.png" alt="third testimoinials" class="responsive-img testimonials">
+                                        <img src="images/user_avatar.jpg" alt="third testimoinials" class="responsive-img testimonials">
                                     </div>
                                     <div class="col s8 l8" style="margin-top: 10px;">
                                     <h6 class="center-align" style="color: #033953;">Tomiwa Folalu</h6>
@@ -270,7 +272,7 @@
                                     <div class="container">
                       <blockquote><p style="text-align: center;">Very creative and dexterious.</p></blockquote>
                                     <div class="col s4 l4" style="margin-top: 10px;">
-                                        <img src="images/shutterstock5.png" alt="fourth testimonials" class="responsive-img testimonials">
+                                        <img src="images/user_avatar.jpg" alt="fourth testimonials" class="responsive-img testimonials">
                                     </div>
                                     <div class="col s8 l8" style="margin-top: 10px;">
                                     <h6 class="center-align" style="color: #033953;">Praise Olubunmi</h6>
@@ -338,6 +340,9 @@
         </div>
     </footer>
 
+    <!-- back to top button -->
+    <button id="back-to-top"><span class="mdi mdi-arrow-up"></span> </button>
+
 
 
 
@@ -373,8 +378,22 @@
         //innercolor
         innerBg:'#4CAF50'
     });
+})
 
+// Back to top functionality
+const backToTop = document.querySelector('#back-to-top');
+    window.addEventListener('scroll',function(){
+        if(window.pageYOffset > 500){
+            backToTop.style.display = "block";
+            // backToTop.style.border = "1px solid black";
+        }else{
+            backToTop.style.display = "none";
+        }
+    });
+    backToTop.addEventListener('click',function(){
+        window.scrollTo(0,0);
     })
+
 </script>
 </body>
 </html>

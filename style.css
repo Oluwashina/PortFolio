@@ -38,3 +38,21 @@ blockquote{
     height: 50px;
     border-radius: 50%;
   }
+
+/* back to top button */
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    right: 20px;
+    font-size: 20px;
+    height: 50px;
+    color: #fff;
+    border: 2px solid #033953;
+    outline: none;
+    border-radius: 50%;
+    background-color: #033953;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
