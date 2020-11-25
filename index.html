@@ -58,11 +58,11 @@
         <div  class="container" style="padding-top: 20px; padding-bottom: 20px;">
             <h4 class="center-align">About me</h4>
             <div class="row">
-                <div class="col s12 l6" style="margin-top: 20px;">    
+                <div class="col s12 l6" style="margin-top: 20px;" data-aos="fade-right">    
                 <p class="about">I am a keen follower of life-long learning so i always practice, improve my skills and acquire new knowledge.</p>
                 <p>I started web development with a desire to execute my creativity and create new things.</p>
                 </div>
-                <div class="col s12 l6" style="margin-top: 20px;">
+                <div class="col s12 l6" style="margin-top: 20px;" data-aos="fade-left">
                     <div class="center-align">
                         <img src="images/shina.jpg" alt="personal" width="150" height="150" class="responsive-img testimonials">
                     </div>
@@ -424,7 +424,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script>
-  AOS.init();
+     AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false
+    })
   var scroll = new SmoothScroll('a[href*="#"]');
 
     $(document).ready(function(){
